@@ -1,3 +1,9 @@
+/*
+    Project Name : Hospital Management System
+    Author Name  : Pranto Bapary
+    Date         : 28th August 2022
+*/
+
 // Header Files
 #include <stdio.h>
 #include <conio.h>
@@ -51,7 +57,7 @@ int main()
 // title function is used to display the name of the hospital
 void title()
 {
-    printf("\t\t\t--------------------------------------\n");
+    printf("\n\t\t\t--------------------------------------\n");
     printf("\t\t\t       Welcome to PBC Hospital       \n");
     printf("\t\t\t--------------------------------------\n");
 }
@@ -59,7 +65,7 @@ void title()
 // inner_title function will display the name of the hospital in large size
 void inner_title()
 {
-    printf("\t\t\t----------------------------------------------------------------\n");
+    printf("\n\t\t\t----------------------------------------------------------------\n");
     printf("\t\t\t                   Welcome to PBC Hospital       \n");
     printf("\t\t\t----------------------------------------------------------------\n");
 }
@@ -72,7 +78,7 @@ void login()
     char username[20];
     char password[20];
     char original_username[20] = "Pranto";
-    char original_password[20] = "200022";
+    char original_password[20] = "221002113";
 
     do
     {
@@ -85,7 +91,7 @@ void login()
 
         if (strcmp(username, original_username) == 0 && strcmp(password, original_password) == 0)
         {
-            printf("\n\t\t\tLogin Successfull");
+            printf("\n\t\t\tLogin Successful");
             getch();
             system("cls");
             main_menu();
@@ -104,7 +110,7 @@ void login()
 
     if (pass_count > 2)
     {
-        printf("\n\t\t\tSoryy You've crossed the limit. You cannot login.");
+        printf("\n\t\t\tSorry You've crossed the limit. You cannot login.");
         getch();
     }
     else
@@ -495,54 +501,54 @@ void update_record()
         main_menu();
     }
 
-    printf("\n\t\t\t!!!!!!!!!!!!!Existing Record!!!!!!!!!!!!!\n\n");
+    printf("\n\t\t\t!!!!!!!!!!!!!Existing Record!!!!!!!!!!!!!\n\n\n");
     while (fscanf(fptr, "%s %s %c %s %s %s %s %s\n", patient_info.first_name, patient_info.last_name, &patient_info.gender, patient_info.age, patient_info.phone, patient_info.address, patient_info.problem, patient_info.doctor) != EOF)
     {
         if (strcmp(first_name, patient_info.first_name) == 0 && strcmp(last_name, patient_info.last_name) == 0)
         {
             valid = 1;
-            gotoxy(1, 12);
+            gotoxy(1, 13);
 
             printf("Full Name");
-            gotoxy(15, 12);
+            gotoxy(15, 13);
 
             printf("Gender");
-            gotoxy(25, 12);
+            gotoxy(25, 13);
 
             printf("Age");
-            gotoxy(35, 12);
+            gotoxy(35, 13);
 
             printf("Phone");
-            gotoxy(47, 12);
+            gotoxy(47, 13);
 
             printf("Full Address");
-            gotoxy(64, 12);
+            gotoxy(64, 13);
 
             printf("Problem");
-            gotoxy(78, 12);
+            gotoxy(78, 13);
 
             printf("Prescribed Doctor");
             printf("\n-------------------------------------------------------------------------------------------------\n");
 
-            gotoxy(1, 14);
+            gotoxy(1, 15);
             printf("%s %s", patient_info.first_name, patient_info.last_name);
 
-            gotoxy(18, 14);
+            gotoxy(18, 15);
             printf("%c", patient_info.gender);
 
-            gotoxy(26, 14);
+            gotoxy(26, 15);
             printf("%s", patient_info.age);
 
-            gotoxy(34, 14);
+            gotoxy(34, 15);
             printf("%s", patient_info.phone);
 
-            gotoxy(50, 14);
+            gotoxy(50, 15);
             printf("%s", patient_info.address);
 
-            gotoxy(65, 14);
+            gotoxy(65, 15);
             printf("%s", patient_info.problem);
 
-            gotoxy(78, 14);
+            gotoxy(78, 15);
             printf("%s", patient_info.doctor);
 
             fflush(stdin);
@@ -607,7 +613,7 @@ void delete_record()
 {
     system("cls");
     inner_title();
-    printf("\n\t\t\t!!!!!!!!!!!!!!!!!!!Delete Patients Record!!!!!!!!!!!!!!!!!!!!!!!!\n");
+    printf("\n\t\t\t!!!!!!!!!!!!!!!!!!!Remove Patients Record!!!!!!!!!!!!!!!!!!!!!!!!\n");
 
     FILE *fptr, *new_ptr;
     int found = 0;
@@ -629,7 +635,7 @@ void delete_record()
     first_name[0] = toupper(first_name[0]);
     last_name[0] = toupper(last_name[0]);
 
-    printf("\n\t\t\t!!!!!!!!!!!!!Existing Record!!!!!!!!!!!!!\n\n");
+    printf("\n\t\t\t!!!!!!!!!!!!!Existing Record!!!!!!!!!!!!!\n\n\n");
 
     while (fscanf(fptr, "%s %s %c %s %s %s %s %s\n", patient_info.first_name, patient_info.last_name, &patient_info.gender, patient_info.age, patient_info.phone, patient_info.address, patient_info.problem, patient_info.doctor) != EOF)
     {
@@ -641,47 +647,47 @@ void delete_record()
         {
             found = 1;
 
-            gotoxy(1, 12);
+            gotoxy(1, 13);
             printf("Full Name");
 
-            gotoxy(15, 12);
+            gotoxy(15, 13);
             printf("Gender");
 
-            gotoxy(25, 12);
+            gotoxy(25, 13);
             printf("Age");
 
-            gotoxy(35, 12);
+            gotoxy(35, 13);
             printf("Phone");
 
-            gotoxy(47, 12);
+            gotoxy(47, 13);
             printf("Full Address");
 
-            gotoxy(64, 12);
+            gotoxy(64, 13);
             printf("Problem");
 
-            gotoxy(78, 12);
+            gotoxy(78, 13);
             printf("Prescribed Doctor");
             printf("\n-------------------------------------------------------------------------------------------------\n");
 
-            gotoxy(1, 14);
+            gotoxy(1, 15);
             printf("%s %s", patient_info.first_name, patient_info.last_name);
 
-            gotoxy(18, 14);
+            gotoxy(18, 15);
             printf("%c", patient_info.gender);
 
-            gotoxy(26, 14);
+            gotoxy(26, 15);
             printf("%s", patient_info.age);
 
-            gotoxy(34, 14);
+            gotoxy(34, 15);
             printf("%s", patient_info.phone);
 
-            gotoxy(50, 14);
+            gotoxy(50, 15);
             printf("%s", patient_info.address);
 
-            gotoxy(65, 14);
+            gotoxy(65, 15);
             printf("%s", patient_info.problem);
 
-            gotoxy(78, 14);
+            gotoxy(78, 15);
             printf("%s", patient_info.doctor);
         }
     }
@@ -697,13 +703,13 @@ void delete_record()
         fclose(new_ptr);
         fclose(fptr);
 
-        printf("\n\n\t\t\tPress 'D' to Confirm Update Process : ");
+        printf("\n\n\t\t\tPress 'R' to Confirm Remove Process : ");
         ch = getche();
-        if (toupper(ch) == 'D')
+        if (toupper(ch) == 'R')
         {
             remove("record.txt");
             rename("new_record.txt", "record.txt");
-            printf("\n\n\t\t\t      Record Deleted Successfully\n");
+            printf("\n\n\t\t\t      Record Removed Successfully\n");
         }
         printf("\n\t\t\tPress Any Key to Go Back to the Main Menu");
         getch();
