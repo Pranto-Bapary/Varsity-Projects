@@ -1,10 +1,1 @@
-Pranto Bapary M 21 01900000000 Shariatpur Fever Imran 
-Hasibul Tuhan M 20 01988888881 Barishal Fever Rahul 
-Tanjil Opuu M 21 01883838383 Gazipur Pain Shakoat 
-Shawmin Azmi F 22 01828282828 Jessore Backpain Shorna 
-Jihan Hossain M 22 01620222222 Barishal Fever Sumia 
-Sumia Jahan F 22 01620222222 Barishal Fever Jihan 
-Asmaul Supti F 22 01620222222 Kustia Cough Nishan 
-Nowshin Oshi F 22 01823833338 Natore Depression Toufiq 
-Tutul Khan M 22 01662689892 Natore Heartbroken Jannat 
-Ishrat Jahan F 22 01575129442 Kishorgonj Anger Robin 
+Pranto Bapary M 21 01234567890 Dhaka Fever Imran 
